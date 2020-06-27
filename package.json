@@ -1,0 +1,17 @@
+{
+  "name": "woman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Valeria Rodionova",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2"
+  }
+}
