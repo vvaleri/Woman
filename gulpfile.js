@@ -6,18 +6,21 @@ let path = {
             html: project_folder + "/",
             css: project_folder + "/css/",
             img: project_folder + "/img/",
+            js: project_folder + '/js',
         },
                 
         src: {                                    
             html: source_folder + "/*.html",  
             css: source_folder + "/scss/style.scss",
             img: source_folder + "/img/**/*.{jpg,png,gif,ico,svg,webp}",
+            js: source_folder + '/js/main.js',
         },
     
         watch: {                                     
             html: source_folder + "/**/*.html",
             css: source_folder + "/scss/**/*.scss",
             img: source_folder + "/img/**/*.{jpg,png,gif,ico,svg,webp}",
+            js: source_folder + '/js/**/*.js',
             
         },
         clean: "./" + project_folder + "/"  
@@ -31,7 +34,8 @@ let path = {
         autoprefixer = require('gulp-autoprefixer'),
         imagemin = require('gulp-imagemin'),
         webp = require('gulp-webp'),
-        webphtml = require('gulp-webp-html');
+        webphtml = require('gulp-webp-html'),
+        babel = require('gulp-babel');
 
 
 
@@ -109,20 +113,27 @@ function images() {
         .pipe(browsersync.stream())                     
 }
 
-
+function js() {
+    return src(path.src.js)
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
+    .pipe(dest(path.build.js))
+}
 
 function watchFiles(params) {
     gulp.watch([path.watch.html],html) 
     gulp.watch([path.watch.css],css)
     gulp.watch([path.watch.img],images)
+    gulp.watch([path.watch.js],js)
 }
 
 
 
-let build = gulp.series(gulp.parallel(css, html, images));    
+let build = gulp.series(gulp.parallel(js, css, html, images));    
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-
+exports.js = js;
 exports.images = images;
 exports.css = css;
 exports.html = html;

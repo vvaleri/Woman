@@ -122,6 +122,9 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header__burger {
@@ -138,6 +141,9 @@ body.lock {
   background-color: #352f2f;
   left: 10px;
   top: 9px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header__burger::before {
@@ -158,6 +164,9 @@ body.lock {
   background-color: #352f2f;
   bottom: 0;
   left: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header__list {
@@ -217,6 +226,9 @@ body.lock {
   bottom: 10px;
   left: -2px;
   background-color: #79100b;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header__burger.active span {
@@ -225,6 +237,15 @@ body.lock {
           transform: rotate(-45deg);
   width: 70%;
   background-color: #79100b;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-header {
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .menu-header__list {
@@ -250,9 +271,9 @@ body.lock {
   z-index: 24;
   padding: 10px 0px;
   overflow: auto;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
 }
 
 @media (min-width: 1024px) {
@@ -293,9 +314,6 @@ body.lock {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
   overflow: auto;
 }
 
@@ -318,6 +336,9 @@ body.lock {
 
 .menu-header__list.active {
   left: 0;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .menu-header__list.active li {
