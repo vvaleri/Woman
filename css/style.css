@@ -1677,6 +1677,12 @@ span.swiper-pagination-progressbar-fill {
   }
 }
 
+@media (min-width: 1920px) {
+  .swiper-img {
+    min-width: 410px;
+  }
+}
+
 .subscribe {
   position: relative;
   display: -webkit-box;
@@ -1827,6 +1833,12 @@ span.swiper-pagination-progressbar-fill {
 @media (min-width: 1440px) {
   .subscribe__content {
     left: 20%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .subscribe__content {
+    left: 25%;
   }
 }
 
