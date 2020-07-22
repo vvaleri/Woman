@@ -102,33 +102,48 @@ let mySwiper = new Swiper ('.swiper-container', {
  })
  
  
- function showMenu (itemSelector, menuSelector, closeSelector) {
-  let item = document.querySelector(itemSelector),
-      menu = document.querySelector(menuSelector),
-      close = document.querySelector(closeSelector);
-      
-   
-  let paddingOffset = window.innerWidth - document.body.clientWidth + 'px'; 
-
-  item.addEventListener('click', () => {
-      item.classList.toggle('active');
-      menu.classList.toggle('active');
-      document.body.style.overflow = 'hidden';
-      document.body.style.paddingRight = paddingOffset;
-  })
+ let subMenu = document.querySelector('#sub-menu'),
+ subList = document.querySelector('.menu-header__list-sub'),
+ menuBurger = document.querySelector('.header__burger'),
+ burgerList = document.querySelector('.menu-header__list'),
+ header = document.querySelector('.header__inner');
+ 
+let paddingOffset = window.innerWidth - document.body.clientWidth + 'px'; 
 
 
-  close.addEventListener('click', (e) => {
-      if (e.target === close) {
-          item.classList.remove('active');
-          menu.classList.remove('active');
-          document.body.style.overflow = '';
-          document.body.style.paddingRight = '0px';
-      }
-    })
+function blockScroll() {
+document.body.style.overflow = 'hidden';
+
+if (window.innerWidth >= 1280) {
+ document.body.style.paddingRight = paddingOffset;
+}
 }
 
-showMenu('.header__burger', '.menu-header__list', '.header__main');
-showMenu('#sub-menu', '.menu-header__list-sub', '.header__main');
- 
+function unblockScroll() {
+document.body.style.overflow = '';
+document.body.style.paddingRight = '0px';
+}
+
+subMenu.addEventListener("click", () => {
+subList.classList.toggle('active')
+burgerList.classList.toggle('lock') 
+})
+
+menuBurger.addEventListener("click", () => {
+burgerList.classList.toggle('active')
+menuBurger.classList.toggle('active')
+
+menuBurger.classList.contains('active') ?  blockScroll() : unblockScroll()
+
+})
+
+document.documentElement.addEventListener("click", (e) => {
+if (e.target.closest('.header__main')) {
+burgerList.classList.remove('active');
+menuBurger.classList.remove('active')
+subList.classList.remove('active')
+unblockScroll() 
+} 
+});
+
  
