@@ -1,4 +1,4 @@
-# Woman
+# woman
 
 - вёрстка mobile first;
 - сборщик gulp;
