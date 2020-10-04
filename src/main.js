@@ -2,9 +2,7 @@
 let mySwiper = new Swiper ('.swiper-container', {
   speed: 300,
   loop: true,
- 
- 
- 
+
    pagination: {
      el: '.swiper-pagination',
      type: 'fraction',
@@ -20,7 +18,6 @@ let mySwiper = new Swiper ('.swiper-container', {
          slidesPerView: 1, 
        },
      }
- 
  })
  
  
@@ -43,14 +40,10 @@ let mySwiper = new Swiper ('.swiper-container', {
          slidesPerView: 2,
          spaceBetween: 30
        },
- 
        1023: {
          slidesPerView: 3,
-        
        },
-      
      }
- 
  });
  
  let mySwiper2 = new Swiper ('.swiper-container__third', {
@@ -95,10 +88,8 @@ let mySwiper = new Swiper ('.swiper-container', {
      1440: {
        slidesPerView: 4,
        spaceBetween: 50,
-      
      },
    }
- 
  })
  
  
@@ -112,37 +103,34 @@ let paddingOffset = window.innerWidth - document.body.clientWidth + 'px';
 
 
 function blockScroll() {
-document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
 
-if (window.innerWidth >= 1280) {
- document.body.style.paddingRight = paddingOffset;
-}
-}
+    if (window.innerWidth >= 1280) {
+     document.body.style.paddingRight = paddingOffset;
+}}
 
 function unblockScroll() {
-document.body.style.overflow = '';
-document.body.style.paddingRight = '0px';
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '0px';
 }
 
 subMenu.addEventListener("click", () => {
-subList.classList.toggle('active')
-burgerList.classList.toggle('lock') 
+    subList.classList.toggle('active')
+    burgerList.classList.toggle('lock') 
 })
 
 menuBurger.addEventListener("click", () => {
-burgerList.classList.toggle('active')
-menuBurger.classList.toggle('active')
-
-menuBurger.classList.contains('active') ?  blockScroll() : unblockScroll()
-
+    burgerList.classList.toggle('active')
+    menuBurger.classList.toggle('active')
+    menuBurger.classList.contains('active') ?  blockScroll() : unblockScroll()
 })
 
 document.documentElement.addEventListener("click", (e) => {
-if (e.target.closest('.header__main')) {
-burgerList.classList.remove('active');
-menuBurger.classList.remove('active')
-subList.classList.remove('active')
-unblockScroll() 
+    if (e.target.closest('.header__main')) {
+    burgerList.classList.remove('active');
+    menuBurger.classList.remove('active')
+    subList.classList.remove('active')
+    unblockScroll() 
 } 
 });
 
