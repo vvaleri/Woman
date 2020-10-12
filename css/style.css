@@ -1325,8 +1325,7 @@ body.lock {
   font-size: 16px;
   text-align: center;
   line-height: 1.2;
-   left: -150px;
-  padding: 0 10px 10px 0;
+   left: -130px;
 }
 
 .about__tex-second p {
@@ -1338,11 +1337,7 @@ body.lock {
     padding-bottom: 20px;
   }
 }
-@media (min-width: 425px) {
-  .about__tex-second p {
-    padding-bottom: 30px;
-  }
-}
+
 @media (min-width: 480px) {
   .about__tex-second p {
     padding-bottom: 50px;
