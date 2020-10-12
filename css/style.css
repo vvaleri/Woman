@@ -1268,8 +1268,6 @@ body.lock {
 @media (min-width: 414px) {
   .about__text-first {
     font-size: 18px;
-    width: 280px;
-    left: 15%;
   }
 }
 
@@ -1321,11 +1319,11 @@ body.lock {
 .about__tex-second {
   position: absolute;
   bottom: 0;
-  width: 320px;
+  width: 280px;
   font-size: 16px;
   text-align: center;
   line-height: 1.2;
-   left: -130px;
+   left: -140px;
 }
 
 .about__tex-second p {
