@@ -1,9 +1,9 @@
 # woman
 
-- вёрстка mobile first;
-- сборщик gulp;
-- препроцессор scss;
+- mobile first;
+- gulp;
+- scss;
 
-Исходный файл js в папке src
+src - file js until babel
 
 https://vvaleri.github.io/woman/
