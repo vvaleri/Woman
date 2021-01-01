@@ -1,9 +1,6 @@
-# woman
+# [woman](https://vvaleri.github.io/woman)
 
 - mobile first;
 - gulp;
-- scss;
+- scss
 
-src - file js until babel
-
-https://vvaleri.github.io/woman/
