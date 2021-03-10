@@ -1195,12 +1195,13 @@ body.lock {
 .about__text-first {
   position: absolute;
   top: 0;
-  left: 5%;
+  left: 0;
   z-index: 9;
-  width: 260px;
+  min-width: 260px;
   font-size: 16px;
   text-align: center;
   line-height: 1.2;
+  padding: 0 5px;
 }
 
 .about__text-first p {
@@ -1227,22 +1228,17 @@ body.lock {
 
 @media (min-width: 360px) {
   .about__text-first {
-    left: 10%;
     top: 20px;
+    padding: 0 10px;  
   }
 }
 
-@media (min-width: 375px) {
-  .about__text-first {
-    left: 13%;
-  }
-}
 
 @media (min-width: 414px) {
   .about__text-first {
     font-size: 18px;
-    width: 280px;
-    left: 15%;
+    /* min-width: 280px; */ 
+ 
   }
 }
 
@@ -1294,11 +1290,11 @@ body.lock {
 .about__tex-second {
   position: absolute;
   bottom: 0;
-  right: -130px;
-  width: 260px;
+  width: 280px;
   font-size: 16px;
   text-align: center;
   line-height: 1.2;
+  left: -140px;    
 }
 
 .about__tex-second p {
@@ -1307,7 +1303,7 @@ body.lock {
 
 @media (min-width: 360px) {
   .about__tex-second p {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1326,7 +1322,6 @@ body.lock {
 @media (min-width: 414px) {
   .about__tex-second {
     font-size: 18px;
-    width: 280px;
     right: -140px;
   }
 }
