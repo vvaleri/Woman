@@ -1,5 +1,7 @@
-# Woman
+# woman
 
-Mobile first
+[landing page](https://vvaleri.github.io/woman):
+- mobile first;
+- gulp;
+- scss
 
-https://vvaleri.github.io/Woman/

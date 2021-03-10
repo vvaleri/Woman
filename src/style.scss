@@ -1,6 +1,5 @@
 @import 'fonts';
 
-
 * {
     padding: 0;
     margin: 0;
@@ -42,7 +41,6 @@ body.lock {
     min-height: 100vh;
 }
 
-
 ._container {
     padding: 15px 15px 0px 15px;
 
@@ -51,24 +49,19 @@ body.lock {
     }
 }
 
-
-.header {
-   
+.header { 
 background: url(../img/main.png) no-repeat;
 
 @media(min-width: 767px) {
 background: url(../img/main-bg.jpg) right top no-repeat;
-
    }
     
-  
    &__content {
     min-height: 490px;
     background-color: rgba(235, 228, 224, 0.8);
     display: flex;
     flex-direction: column;
     position: relative;
-   
    }
 
    &__content::before {
@@ -87,14 +80,12 @@ background: url(../img/main-bg.jpg) right top no-repeat;
 
     @media(min-width: 1440px) {
         width: 750px; 
-    }
-   }
+    }}
 
     &__inner {
     display: flex;
     justify-content: space-between;
     transition: 0.5s;
-   
     }
 
     &__burger {
@@ -131,14 +122,11 @@ background: url(../img/main-bg.jpg) right top no-repeat;
             left: 0;
             transition: 0.5s;
         }
-
     }
    
     &__list {
         display: flex;
         flex: 1 1 auto;
-        
-
     }
     &__icon {
         padding-left: 30px;
@@ -168,11 +156,9 @@ background: url(../img/main-bg.jpg) right top no-repeat;
     }
 }
 
- 
 .header__burger.active:before {
    width: 90%;
    background-color: #79100b;
-//    transition: 0.5s;
      }
   
   .header__burger.active:after {
@@ -190,16 +176,13 @@ background: url(../img/main-bg.jpg) right top no-repeat;
    transition: 0.5s;
 }
 
-
-
 .menu-header {
     transition: 0.7s;
-   
 &__list {
     position: fixed;
-   display: flex;
+    display: flex;
     flex-direction: column;
-     justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(235, 228, 224, 0.9);
     width: 100%;
@@ -219,7 +202,6 @@ background: url(../img/main-bg.jpg) right top no-repeat;
     @media(min-width: 1360px) {
         height: 540px;
         font-size: 18px;
-      
     }
 }
 
@@ -247,20 +229,16 @@ background: url(../img/main-bg.jpg) right top no-repeat;
        top: 0;
    }
 
-
    a:hover {
        color: #79100b;
    } 
-
 }
 }
 
 
 .menu-header__list-sub.active {
     visibility: visible;
-   
 }
-
 
 .menu-header__list.active {
     left: 0;
@@ -276,11 +254,8 @@ background: url(../img/main-bg.jpg) right top no-repeat;
 }
 
 .menu-header__list.lock {
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
-
-
 .main{
     display: flex; 
     position: relative;
@@ -337,7 +312,6 @@ background: url(../img/main-bg.jpg) right top no-repeat;
         @media(min-width: 1024px) {
             max-width: 145px;
         }
-    
      }
 
      &__catalog a {
@@ -351,7 +325,6 @@ background: url(../img/main-bg.jpg) right top no-repeat;
     @media(min-width: 1024px) {
         font-size: 18px;  
         }
-        
      }
 
     &__slider {
@@ -388,7 +361,6 @@ background: url(../img/main-bg.jpg) right top no-repeat;
         display: flex; 
     }
 
-
     &__social {
         display: none;
 
@@ -402,9 +374,7 @@ background: url(../img/main-bg.jpg) right top no-repeat;
 
     @media(min-width: 1024px) {
         max-width:300px;
-    }
-
-    }
+    } }
 
     &__social a {
 
@@ -548,7 +518,6 @@ background: url(../img/main-bg.jpg) right top no-repeat;
             }
         }
     }
-
  }
 
 
@@ -673,7 +642,6 @@ background: url(../img/main-bg.jpg) right top no-repeat;
      position: relative;
  }
 
- 
  .swiper-button-next-second {
 position: absolute;
 top: 40%;
@@ -823,7 +791,6 @@ align-items: center;
         width: 100%;
         height: 100%;
     }
-    
     }
 
     &__title{
@@ -1035,8 +1002,7 @@ align-items: center;
 
             @media(min-width: 600px) {
                 padding-bottom: 0px;
-            }
-          
+            }     
         }
 
         @media(min-width: 414px) {
@@ -1089,7 +1055,6 @@ align-items: center;
             left: 10%;
         }
      }
-
  }
 
 
@@ -1159,8 +1124,7 @@ align-items: center;
         @media(min-width: 1440px) {
             font-size: 20px;
             
-        }
-        
+        }   
     }
 
     &__slider {
@@ -1172,8 +1136,7 @@ align-items: center;
 
     @media(min-width: 767px) {
         max-width: 720px;
-
-            }
+    }
         
     @media(min-width: 1023px) {
        max-width: 1020px;
@@ -1204,9 +1167,7 @@ align-items: center;
         @media(min-width: 1152px) {
             max-width: 500px;
             max-height: 510px;
-         
         }
-
     }
     }
 }
@@ -1277,12 +1238,10 @@ margin-left: 50%;
         margin-bottom: 40px;
        margin-left: 0;
     }
-
 }
 
 span.swiper-pagination-progressbar-fill {
-    position: absolute;
-   
+    position: absolute;  
 }
 
 
@@ -1292,11 +1251,8 @@ span.swiper-pagination-progressbar-fill {
      @media(min-width: 767px) {
          display: flex;
          flex-direction: column;
-         align-items: flex-end;
-       
+         align-items: flex-end;  
      }
-
-  
  }
 
  .swiper-hashtag {
@@ -1318,7 +1274,6 @@ margin-top: 15px;
          
     }
 }
-
 
 
 .subscribe {
@@ -1357,8 +1312,6 @@ margin-bottom: 80px;
        @media(min-width: 1023px) {
               object-fit: fill;
        }
-   
-    
     }
 
     &__content {
@@ -1424,8 +1377,6 @@ margin-bottom: 80px;
         @media(min-width: 1440px) {
             left: 20%;
         }
-
-
     }
 
     &__text {
@@ -1450,7 +1401,6 @@ margin-bottom: 80px;
             font-size: 36px;
             max-width: 680px;
         }
-
     }
 
     &__mail {
@@ -1463,10 +1413,7 @@ margin-bottom: 80px;
         @media(min-width: 1023px) {
             width: 272px;
         }
-
     }
-
-   
 
     form {
         display: flex;
@@ -1490,7 +1437,6 @@ margin-bottom: 80px;
         @media(min-width: 1023px) {
             width: 167px;
         }
-
     }
 
     &__sign {
@@ -1533,9 +1479,7 @@ margin-bottom: 80px;
         &__inner {
             display: flex;
             min-height: 400px;
-            padding: 10% 0px 0px 10%;
-           
-           
+            padding: 10% 0px 0px 10%;   
         }
 
         &__catalog {
@@ -1551,8 +1495,6 @@ margin-bottom: 80px;
                 color: #91171d;
             }
         }
-           
-
         }
 
         &__main  {
@@ -1570,7 +1512,6 @@ margin-bottom: 80px;
             }
         }
 
-    
         &__etc {
             flex: 1 0 33.333%;
             display: flex;
@@ -1591,8 +1532,7 @@ margin-bottom: 80px;
 
     @media(min-width: 1280px) {
         &__inner {
-            padding: 5% 0px 0px 10%;
-           
+            padding: 5% 0px 0px 10%;      
         }
     }
 
@@ -1617,7 +1557,6 @@ margin-bottom: 80px;
             }
         }
     }
-
 }
 
 .contact {
@@ -1660,7 +1599,6 @@ margin-bottom: 80px;
               
             }
         }
-
     }
 
     &__social {
