@@ -27,6 +27,7 @@ a {
   text-decoration: none;
   display: inline-block;
   color: #342b2b;
+  background-color: transparent;
 }
 
 ul,
